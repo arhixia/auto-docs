@@ -15,7 +15,7 @@ save_summary(project_data, summary_file)
 api_key = "your_api_key"
 documentation_text = request_gpt(api_key, summary_file)
 
-# Шаг 4: Сохранение сгенерированной документации в файл
+
 documentation_file = "generated_documentation.md"
 save_documentation(documentation_text, documentation_file)
 
