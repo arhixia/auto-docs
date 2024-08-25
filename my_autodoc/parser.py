@@ -13,7 +13,7 @@ def parse_project(project_dir):
                 with open(file_path, "r", encoding="utf-8") as source_code:
                     try:
                         tree = ast.parse(source_code.read())
-                        # Ваши действия с AST
+                       
                         functions = [node.name for node in ast.walk(tree) if isinstance(node, ast.FunctionDef)]
                         classes = [node.name for node in ast.walk(tree) if isinstance(node, ast.ClassDef)]
 
